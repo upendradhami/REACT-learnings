@@ -27,7 +27,7 @@ function MyApp() {
 ////// The upper method doesn't actual react the react has it's own method named React.createElement() , which we will see below  , 
 
 // At first let's see whether we can render any element directly in to the browser or not  here 
-const anotherElement = <a href="https://www.youtube.com"> visit youtube </a> ;
+const anotherElement = <a href="https://www.google.com" target='_blank'> visit google  </a> ;
 
 //// when jsx is provided with above form the Babel convert the jsx to object form behind the scene 
 
@@ -46,6 +46,7 @@ createRoot(document.getElementById('root')).render(
  <>
   <MyApp />
   { anotherElement}
+  <br />
  { reactElements}
  </>
 
